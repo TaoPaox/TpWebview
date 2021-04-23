@@ -29,13 +29,3 @@ allprojects {
     }
 
 }
-tasks.withType(Javadoc) {
-    options.addStringOption('Xdoclint:none', '-quiet')
-    options.addStringOption('encoding', 'UTF-8')
-}
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
-//tasks.getByPath(":agentweb-core:mavenAndroidJavadocs").enabled = false
-//tasks.getByPath(":agentweb-download:mavenAndroidJavadocs").enabled = false
-//tasks.getByPath(":agentweb-filechooser:mavenAndroidJavadocs").enabled = false
